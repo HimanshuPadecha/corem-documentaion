@@ -228,7 +228,7 @@ export const users = sqlTable("users", {
           code: `import { corem } from "@himanshupadecha/corem";
 
 // Initialize and export the database connection
-export const db = await corem();`,
+export const db = corem();`,
           filename: "src/db/index.ts"
         }
       ]
@@ -274,7 +274,7 @@ export default defineConfig({
 
 // Initialize and export the database connection
 // Make sure this file is executed after your environment variables are loaded!
-export const db = await corem();`,
+export const db = corem();`,
           filename: "src/db/index.ts"
         }
       ]

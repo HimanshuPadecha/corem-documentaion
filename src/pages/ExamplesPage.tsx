@@ -23,7 +23,7 @@ const examples = [
     code: `import { corem, sqlTable, int, varchar } from "@himanshupadecha/corem";
 
 // 1. Initialize client (uses environment variables by default)
-export const db = await corem();
+export const db = corem();
 
 // 2. Define schema
 export const users = sqlTable("users", {
